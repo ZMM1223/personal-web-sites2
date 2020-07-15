@@ -1,0 +1,77 @@
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        width: 100%;
+        background-image: url("震义林然.jpg");
+        background-repeat: no-repeat;
+    }
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 450px;
+        padding: 180px;
+        background-color: royalblue;
+        height:500px;
+        width:600px;
+        background-image: linear-gradient(to bottom right,#996699,#3366CC);
+        box-sizing: border-box;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+    .box1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        padding: 100px;
+        background-color:rgb(99, 78, 218);
+        height:500px;
+        width:500px;
+        box-sizing: border-box;
+        border-radius: 0px 10px 10px 0px
+    }
+    input
+    {
+        border-bottom-width: 10px white;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-top-width: 0px;
+        background-color:transparent;
+        color: white;
+    } 
+
+    a:link,a:visited{
+        text-decoration:none; 
+        color: white;
+    }
+      #denglu{
+        text-decoration: none;
+        border-bottom: 3px solid yellow; width: 40px;
+        color: white;
+        } 
+     h3.zhuce>span {
+        padding-bottom: 1px;
+        border-bottom: 2px solid yellow;width: 40px;
+        color: white;
+        transform: translate(-50%,-50%);
+        width: 40px;
+        left:35%;
+        position: relative;
+        }
+
+    #tijiao button{
+        text-decoration:none;
+	    background-color: rgb(238, 236, 108);
+	    color: wheat;
+	    font-size:16px;
+	    font-family:sans-serif;
+	    font-weight:bold;
+        transform: translate(-50%,-50%);
+        left:50%;
+	    position: relative;
+        width: 70px; height: 70px; border-radius:50%;
+  }

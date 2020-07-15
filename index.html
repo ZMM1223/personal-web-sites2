@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+    
+    .home {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .content {
+    
+        width: 100%;
+        position: relative;
+    }
+
+    .title {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 300px;
+        margin: auto;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    
+    .titles {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 350px;
+        margin: auto;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .icon {
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        position: absolute;
+        left: 49%;
+        bottom: 50px;
+        animation: downs 2s linear infinite;
+    }
+
+    .daohang {
+        display: flex;
+        position: absolute;
+        right: 300px;
+        top: 50px;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .daohang a:link,
+    .daohang a:visited {
+        color: #000;
+        text-decoration: none;
+        height: 56px;
+        overflow: hidden;
+    }
+    .daohang span {
+        background: #fff;
+        display: inline-block;
+        line-height: 48px;
+        padding: 0 40px;
+        margin-top: 12px;
+        position: relative;
+        -webkit-transition: background-color 0.2s, margin-top 0.2s;
+        /*兼容浏览器 Saf3.2+, Chrome */
+        -moz-transition: background-color 0.2s, margin-top 0.2s;
+        /* FF4+ */
+        -ms-transition: background-color 0.2s, margin-top 0.2s;
+        /* IE10 */
+        -o-transition: background-color 0.2s, margin-top 0.2s;
+        /* Opera 10.5+ */
+        transition: background-color 0.2s, margin-top 0.2s;
+    }
+    .daohang a:hover span {
+        background: pink;
+        margin-top: 0;
+    }
+
+    audio {
+        position: fixed;
+        bottom: 50px;
+        right: 0;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 300px;
+      
+        overflow: hidden;
+    }
+    
+    .icons_items {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        margin-top: 80px;
+        width: 200px;
+    }
+    
+    .icons_items_imgs {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+/*这就是我*/
+    #content{
+        margin:0 auto;
+        width:902px;
+        height:290px;
+   
+    }
+
+    section{
+        float:left;
+        width:75%;
+        margin-right:0px;
+        margin-top:15px;
+        background-color:#FFF;
+        text-align:left;
+        font-size:20px;
+        padding:5px;
+    }
+
+    section p{ 
+        font: normal 0.9em Arial, Verdana, Helvetica, sans-serif;
+        font-size:0.9em;
+        color: #000000;
+        padding:10px;
+        text-align:left;
+    }
+/*个人信息*/
+    body{
+        background-color:#eceddd;
+        font-family:Arial, Verdana,'Lucida Grande', Helvetica, sans-serif;
+        text-align: center;
+        color: #333333;
+}
+
+    aside{
+        float:left;
+        list-style:none;
+        margin-left:10px;
+        height:50%;
+    }
+
+
+    aside ul{
+        list-style:none;
+        margin-top:10px;
+        margin-left:0px;
+    }
+
+    aside li{
+        text-align:left;
+        padding-left:0px;
+        padding-top:10px;
+        border-bottom:10px solid #eaeada;
+    }
+
+    aside ul li a{
+        display:block;
+        background-color:#ffffff;
+        line-height:35px;
+        margin-right:0px;
+        padding-top:6px;
+        padding-bottom:6px;
+        padding-left:22px;
+        color: #666666;
+        font-weight:normal;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        width:150px;
+    }
+
+    aside  li a:hover{
+         color: #37210c;
+        background-color:#f7f7f2;
+    }
+
+    aside .selected{
+        color: #37210c;
+        background-color:#f7f7f2;
+    }
+
+    #content{
+        margin:0 auto;
+        width:850px;
+        background-color:floralwhite;
+        height:290px;
+        clear:both;
+    }
+
+    section{
+        float:left;
+        width:75%;
+        margin-left:5px;
+        margin-right:0px;
+        margin-top:10px;
+        margin-bottom:30px;
+        background-color:papayawhip;
+        text-align:left;
+        font-size:12px;
+        padding:5px;
+    }
+    main {
+        width: 1120px;
+        margin-left: 330px;
+        }
+    section img {
+        width: 730px;
+        margin-left: 50px;
+        }
+    section video {
+        width: 730px;
+        margin-left: 50px;
+        }
+
+    footer {
+        width:902px;
+        height: 85px;
+        clear:both;
+        margin-top: 10px;
+        color:#666666;;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 0px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    footer p{
+        font-size:11px;
+        font-family:arial;
+        font-weight:normal;
+        color:goldenrod;
+        padding:25px 0 0 10px;
+        text-align:center;
+    }
+    footer div{
+        font-size:12px;
+        font-family:arial;
+        color:goldenrod;
+        padding:5px 0 0 10px;
+        text-align:center;
+    }
+</style>
+
+</head>
+<body>
+    <div class="home" id="home">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="首页的图.jpg" width="100%" alt="无法显示">
+            <h3 class="title">欢迎来到我的个人网站</h3>
+            <h3 class="titles">/不管怎么样 明天又是新的一天/</h3>
+            <div class='daohang'>
+                <a href='index.html'><span>Home</span></a>
+                <a href='about.html'><span>About</span></a>
+                <a href="form.html"><span>Form</span></a>
+            </div>
+
+        </div>
+
+        <div class="icons">
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="1.JPG"   alt="">
+                <span>寻找中国最后的净土“雅鲁藏布江大峡谷”</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="2.JPG" alt="">
+                <span>拉萨河沿途的猪羊牛群，这是赶路人的使命</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="3.png" alt="">
+                <span>云南丽江的草地与天空，那天尝试着骑马</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="4.JPG" alt="">
+                <span>这是冬天的羊湖，远处的雪山点缀梦幻的旅途</span>
+            </div>
+        </div>
+        <br><br><br>
+
+
+<!--个人信息-->
+  <div id="content">
+      <section>
+
+          <pre>
+
+                经常混迹豆瓣、微博、b站等社交平台，能准确把握不同社交平台的文案风格，
+            因为平常十分喜爱看综艺，所以自己也创建了自媒体平台并取得了还不错的社会反响。
+            同时能合理分配专业课与兴趣爱好的时间，积极参与各种与综艺节目有关的活动，视
+            频较高的播放量或者较高的转赞评，都能让我产生一定的满足感
+                待人热情、有较强的组织能力，从小就人缘好，入党评选班上全票通过，平时的
+            小组作业中，能起到很好的“领导作用”，因此很多同学愿意和我交流合作。性格活泼
+            开朗，热爱live现场，在音乐节或者演唱会的现场总能结交到新朋友。有独到的观点，
+            敢于在公开场合发表自己的看法。
+                擅长创意、文案和后期，在校综合成绩名列前茅，拿过绩点、综评专业第一名的
+            优异成绩，有极强的学习能力。大二上加入专业老师的工作室，为学校的宣传片与老
+            师网课授课视频做过策划、后期。担任办公室主任一职，负责例会的通知、与会议整
+            理，同时负责工作室公众号的写文与排版，为影视工作室起到了很好的对外宣传的作用。
+                在学生会做过团委组织部部长，能起到很好的带头作用。是校五星社团“杭电之声”
+            视频部成员，负责视频创意、文案的撰写、拍摄脚本以及现场指导。在全国大学生广告
+            创意大赛中也负责同样任务。同时也是校啦啦操健美操成员，在学校各大场合都有出演，
+            拿过体育舞蹈第一名的好成绩，有多次主席台发表演讲的经历，不惧怕上台，德智体美
+            全面发展。
+          </pre>
+  
+      </section>
+  
+  
+      <aside>
+          <ul>
+              <li><a href="#content" class="selected">这就是我 </a> </li>
+              <li><a href="#mylife">我的相册 </a></li>
+              <li><a href="我的代码.html#zuiwaiceng">我的档案 </a></li>
+              <li><a href="#video">二创视频</a></li>
+          </ul>
+      </aside> 
+  </div>
+
+  <main>
+  <div  class="content">
+  <section id="mylife">
+    <h2>我的生活</h2>
+    <p>追星: 线下Unine粉丝见面会</p>
+    <img src="追星.jpg" alt="图片"><br>
+    <p>摄影: 走走停停的发现杭电校园的美——木兰花</p>
+    <img src="摄影.JPG" alt="图片"><br>
+    <p>旅行：来一场说走就走的旅行</p>
+    <img src="旅行.jpg" alt="图片"><br>
+    <p>现场：享受摇旗呐喊的热情</p>
+    <img src="现场.jpg" alt="图片"><br>
+    <p>后期：自己磕的cp跪着也要剪完</p>
+    <video controls id="video">
+        <source src="cp.mp4" type="video/mp4">
+    </video>
+    <p style="text-align: center;"><a href="#mylife">返回相册顶部</a></p>
+    <p style="text-align: center;"><a href="#home">返回页面顶部</a></p>
+</section>
+   </div>
+   </main>
+   <div style="position:fixed;bottom: 0;right: 0;">
+   <audio controls id="music">
+       <source src="cc.mp3" type="audio/ogg">
+   </audio>
+   </div>
+  <footer>
+          <p>@张苗苗</p>
+          <hr />
+       <div>weibo:婧料 /抖音:婧料</div>
+  </footer>
+    </div>
+</body>
+</html>

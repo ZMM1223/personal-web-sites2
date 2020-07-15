@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+}
+
+    .about {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+}
+
+    .about_bgc {
+        width: 100%
+}
+
+    .about_tit {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 300px;
+        margin: auto;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 500;
+}
+
+    .daohang {
+        display: flex;
+        position: absolute;
+        right: 300px;
+        top: 50px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .daohang a:link,
+    .daohang a:visited {
+        color: #000;
+        text-decoration: none;
+        height: 56px;
+        overflow: hidden;
+    }
+    
+    .daohang span {
+        background: #fff;
+        display: inline-block;
+        line-height: 48px;
+        padding: 0 40px;
+        margin-top: 12px;
+        position: relative;
+        -webkit-transition: background-color 0.2s, margin-top 0.2s;
+        /*兼容浏览器 Saf3.2+, Chrome */
+        -moz-transition: background-color 0.2s, margin-top 0.2s;
+        /* FF4+ */
+        -ms-transition: background-color 0.2s, margin-top 0.2s;
+        /* IE10 */
+        -o-transition: background-color 0.2s, margin-top 0.2s;
+        /* Opera 10.5+ */
+        transition: background-color 0.2s, margin-top 0.2s;
+    }
+    
+    .daohang a:hover span {
+        background: pink;
+        margin-top: 0;
+    }
+
+/*我的经历*/
+
+    #zuiwaiceng{
+        margin: auto;
+        width: 1000px;
+        margin-top: 50px;
+    }
+ 
+    .main{
+        width: 740px;
+        background-color: white;
+        float: left;
+        padding: 20px;
+    }
+ 
+    .item{
+        margin-top: 20px;
+        padding-bottom: 30px;
+        border-bottom: dotted 1px #999;
+    }
+ 
+    .item_img{
+        float: left;
+        width: 100px;
+    }
+ 
+    .item_img img{
+        float: left;
+        width: 80px;
+    }
+ 
+    .item_content{
+        margin-bottom: 10px;
+    }
+ 
+    .item_content h3{
+        font-size: 14px;
+        color: #FF6347;
+        margin: 0;
+    }
+ 
+    .item_info{
+        font-size: 12px;
+        font-style: italic;
+        margin:0;
+        color: #999;
+    }
+ 
+    .item_desc{
+        margin: 0;
+        margin-top:10px;
+        padding-left: 10px;/*设置左填充*/
+        width: 600px;
+    }
+    </style>
+</head>
+<body>
+    <div class="about">
+        <h3 class="about_tit" style="color: snow;">下拉进入个人简历</h3>
+        <img class="about_bgc" src="第二页背景图.jpg" alt="">
+        <div class='daohang'>
+            <a href='index.html'><span>Home</span></a>
+            <a href='about.html'><span>About</span></a>
+            <a href="form.html"><span>Form</span></a>
+    </div>
+
+        <div id="zuiwaiceng">
+            <div class="main">
+                  <div class="item">
+                     <div class="item_img">
+                        <img src="one.png" alt="">
+                     </div>
+                     <div class="item_content">
+                        <h3>经历一</h3>
+                        <p class="item_info">主要职能：出镜拍摄、录音</p>
+                     </div>
+                     <img class="item_desc" src="经历1.png"   alt="">
+                  </div>
+                  <div class="item">
+                     <div class="item_img">
+                        <img src="two.png" alt="Testing Demo Project pic">
+                     </div>
+                     <div class="item_content">
+                        <h3>经历二</h3>
+                        <p class="item_info">主要职能：资料收集、文案创作、后期剪辑</p>
+                     </div>
+                     <img class="item_desc" src="经历2.png" alt="">
+                  </div>
+     
+     
+                  <div class="item">
+                     <div class="item_img">
+                        <img src="three.png" alt="Testing Demo Project pic">
+                     </div>
+                     <div class="item_content">
+                        <h3>经历三</h3>
+                        <p class="item_info">主要职能：脑洞大开、创意、后期剪辑</p>
+                     </div>
+                     <img class="item_desc" src="经历3.png" alt="">
+                  </div>
+     
+     
+                  <div class="item">
+                     <div class="item_img">
+                        <img src="four.png" alt="Testing Demo Project pic">
+                     </div>
+                     <div class="item_content">
+                        <h3>经历四</h3>
+                        <p class="item_info">主要职能：审片写观感、二次创作、后期剪辑</p>
+                     </div>
+                     <img class="item_desc" src="经历4.png" alt="">
+                  </div>
+
+                  <div class="item">
+                    <div class="item_img">
+                       <img src="five.png" alt="Testing Demo Project pic">
+                    </div>
+                    <div class="item_content">
+                       <h3>经历五</h3>
+                       <p class="item_info">主要职能：听课、考证</p>
+                    </div>
+                    <img class="item_desc" src="经历5.png" alt="">
+                 </div>
+
+            </div>
+                       <div>
+                          <img src="证件照.png" alt="">
+                       </div>
+                       <div>
+                        <h4>*苗苗</h4><br>
+                        <p>文案/运营/后期<br>
+                          杭州电子科技大学</p><br><hr>
+                     </div>
+                </div>
+                <div>
+                     <h4>其他信息</h4>
+                     <ul>
+                     <li>学历：本科</li>
+                     <li>专业：传播学新媒体类</li>
+                     <li>电话：153****2022</li>
+                     <li>邮箱：160650****@qq.com</li>
+                     <li>微信:  Zmm1223****</li><br>
+                     </ul>
+                </div>
+                <div>
+                     <p>专业技能：PS PR AE AU </p>
+                     <p>DaVinci C4D Visual Studio Code</p>
+                     <p>以及office办公软件</p><br>
+                  </div>
+
+                <div>
+                    <h4>获奖情况</h4>
+                    <ul>
+                    <li>全国大学生广告创意大赛省赛三等奖</li><br>
+                    <li>全国大学生广告创意大赛国赛优秀奖</li><br>
+                    <li>2019百万同题英语写作活动优秀作品奖</li><br>
+                    <li>校一等奖学金 校三等奖学金 学生工作奖</li><br>
+                    <li>校体育舞蹈第一名</li><br>
+                    <li>全国电子商务比赛校三等</li><br>
+                    <li>欧莱雅校园策划大赛证书</li><br>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>
